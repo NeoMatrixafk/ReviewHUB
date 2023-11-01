@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust top margin to move the logo down */
+    color: #fff; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-img {
+    width: 200px; /* Adjust the width of the logo image */
+    height: 200px;
+    margin-right: 10px; /* Add margin between logo image and text */
+}
+
+/* Style for the search bar container at the middle */
+.search-bar-container {
+    display: flex;
+    justify-content: space-between; /* Arrange search bars side by side */
+    align-items: center; /* Center align vertically */
+    background-color: #000; /* Background color for the search bar container (black) */
+    padding: 15px 15px; /* Add padding for spacing and move the search bars down */
+    color: #fff; /* Text color */
+    position: fixed; /* Fixed position at the top */
+    top: 45%; /* Center vertically on the page */
+    width: 96%; /* Full width */
+    transform: translateY(-50%); /* Adjust to center vertically */
+}
+
+/* Style for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Set a specific width for search bars */
+    background-color: #fff; /* White background for search bars */
+    border-radius: 20px; /* Curved corners for the outer part */
+}
+
+/* Style for the search bar input */
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px; /* Curved corners for the search box */
+    width: 250%
+
+}
+
+/* Style for the search bar button */
+.search-bar button {
+    background-color: #ff9900; /* Change button background color (similar to Amazon) */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button i {
+    color: #fff; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+.amazon-search-bar {
+    background-color: #ff9900; /* Change Amazon's color */
+}
+
+.flipkart-search-bar {
+    background-color: #ff9900;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+</head>
+<body>
+
+    <div class="logo">
+        <img src="public/newlogomaker.png" alt="ReviewHub Logo" class="logo-img">
+    </div>
+
+    <div class="search-bar-container">
+
+<div class="search-bar-container">
+
+    <div class="search-bar flipkart-search-bar">
+        <form method="post" action="http://127.0.0.1:5000/flipkart_search" enctype="multipart/form-data">
+            <input type="text" id="flipkart_search_query" name="flipkart_search_query" placeholder="Search on Flipkart" />
+            <div class="search-button-container">
+                     <button type="submit"><i class="fas fa-search"></i></button>
+                 </div>
+        </form>
+
+
+    </div>
+
+    <div class="search-bar amazon-search-bar">
+        <form method="post" action="http://127.0.0.1:5000/amazon_search" enctype="multipart/form-data">
+            <input type="text" id="amazon_search_query" name="amazon_search_query" placeholder="Search on Amazon" />
+            <div class="search-button-container">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+    </div>
+
+</body>
+</html>

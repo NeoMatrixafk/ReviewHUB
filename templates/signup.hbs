@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Logo styles */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    height: 15vh; /* Center vertically */
+}
+
+
+.review {
+    color: #fff; /* Text color for "review" */
+    background-color: #333; /* Background color for "review" (black) */
+    padding: 5px 10px; /* Add padding to the "review" text */
+    border-radius: 5px; /* Rounded corners for the background */
+}
+
+.hub {
+    color: #ffcc00; /* Text color for "hub" (yellow) */
+    margin-left: 4px; /* Adjust spacing between "review" and "hub" */
+}
+
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Style for the signup container */
+.signup-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 65px; /* Adjust the top margin to center vertically */
+}
+
+/* Style for the page title */
+.page-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style for the signup form */
+.signup-form {
+    /* Center the form within the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style for input labels */
+.input-label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the submit button */
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style for the login link */
+.login-link {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Style for the login link anchor */
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <span class="review">review</span><span class="hub">hub</span>
+    </div>
+
+    <div class="signup-container">
+        <h1 class="page-title">Sign Up</h1>
+        <form action="/signup" method="post" class="signup-form">
+            <div class="form-group">
+                <label for="name" class="input-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" class="input-field">
+            </div>
+            <div class="form-group">
+                <label for="password" class="input-label">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" class="input-field">
+            </div>
+            <div class="form-group">
+                <input type="submit" class="submit-button" value="Sign Up">
+            </div>
+        </form>
+        <p class="signup-link">Already have an account? <a href="/login">Log in here</a></p>
+    </div>
+</body>
+</html>

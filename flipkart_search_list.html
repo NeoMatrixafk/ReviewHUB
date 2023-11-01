@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Adjust top margin to move the logo down */
+    color: #fff; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo-img {
+    width: 200px; /* Adjust the width of the logo image */
+    height: 200px;
+    margin-right: 10px; /* Add margin between logo image and text */
+}
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 300px; /* Set a maximum height for the container */
+            overflow-y: auto; /* Add a vertical scrollbar when content exceeds the container height */
+            margin-top: 25px;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0; /* Add margin between boxes */
+        }
+
+        .product-image {
+            max-width: 100px; /* Adjust the size as needed */
+            max-height: 100px; /* Adjust the size as needed */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .product-name {
+            margin-top: 20px;
+        }
+
+        .go-back-button {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 10px; /* Adjust the right position as needed */
+            background-color: #ff9900; /* Button background color */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Adjust the padding as needed */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make text bold */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="public/newlogomaker.png" alt="ReviewHub Logo" class="logo-img">
+    </div>
+
+    <div class="container" id="product-container">
+    </div>
+
+    <a href="http://localhost:3000/login" class="go-back-button">Back To Search</a>
+
+    <script src="flipkartproducts.js"></script>
+</body>
+</html>
