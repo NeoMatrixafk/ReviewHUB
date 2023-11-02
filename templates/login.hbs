@@ -1,38 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="icon" href="public/tab.png" type="image/png">
+
     <style>
         /* Logo styles */
         .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Center horizontally */
-            color: #333;
-            font-size: 40px;
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            height: 15vh; /* Center vertically */
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color */
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
-        .review {
-            color: #fff; /* Text color for "review" */
-            background-color: #333; /* Background color for "review" (black) */
-            padding: 5px 10px; /* Add padding to the "review" text */
-            border-radius: 5px; /* Rounded corners for the background */
-        }
-
-        .hub {
-            color: #ffcc00; /* Text color for "hub" (yellow) */
-            margin-left: 4px; /* Adjust spacing between "review" and "hub" */
-        }
-
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            background-color: #000; /* Background color for the logo (black) */
-            padding: 10px 0;
-        }
+.logo-img {
+    width: 200px; /* Adjust the width of the logo image */
+    height: 200px;
+    margin-right: 10px; /* Add margin between logo image and text */
+}
 
         /* Reset default margin and padding */
         body, html {
@@ -50,7 +38,7 @@
             text-align: center;
             max-width: 300px; /* Adjust the width as needed */
             margin: 0 auto; /* Center the container horizontally */
-            margin-top: 65px; /* Adjust the top margin to center vertically */
+            margin-top: 5px; /* Adjust the top margin to center vertically */
         }
 
         /* Style for the page title */
@@ -123,7 +111,7 @@
 <body>
     <!-- Logo -->
     <div class="logo">
-        <span class="review">REVIEW</span><span class="hub">HUB</span>
+        <img src="public/newlogomaker.png" alt="ReviewHub Logo" class="logo-img">
     </div>
 
     <div class="login-container">
@@ -138,7 +126,7 @@
                 <input type="password" id="password" name="password" placeholder="Enter your password" class="input-field">
             </div>
             <div class="form-group">
-                <input type="submit" class="submit-button" value="Submit">
+                <input type="submit" class="submit-button" value="Login">
             </div>
         </form>
         <p class="signup-link">Don't have an account? <a href="/signup">Sign up here</a></p>

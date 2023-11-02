@@ -31,7 +31,7 @@ function processJsonData(jsonData) {
 
         const reviewContentElement = document.createElement('p');
         reviewContentElement.className = 'product-name';
-        reviewContentElement.textContent = 'Review: ' + review.review;
+        reviewContentElement.textContent = 'Review: ' + review.message;
 
         box.appendChild(userElement);
         box.appendChild(titleElement);

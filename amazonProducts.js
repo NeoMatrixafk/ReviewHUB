@@ -41,8 +41,13 @@ async function fetchJsonFile() {
                 const productLink = this.getAttribute('data-product-link');
                 if (productLink) {
                     saveProductLinkToFile(productLink)
-                        .finally(() => {
+                        .then(() => {
                             clickInProgress = false;
+                            window.close();
+                        })
+                        .catch((error) => {
+                            clickInProgress = false;
+                            console.error('Failed to save Product Link:', error);
                         });
                 }
             }

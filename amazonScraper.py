@@ -30,8 +30,10 @@ class AmazonScraper:
         reviews = []
         for tag in page_content.find('div[data-hook=review]'):
             user = tag.find('span[class=a-profile-name]', first=True).text
-            title = tag.find('a[data-hook=review-title] > span:nth-child(3)', first=True).text
-            star_rating = tag.find('i[data-hook=review-star-rating]', first=True).text
+            title_element = tag.find('a[data-hook=review-title] > span:nth-child(3)', first=True)
+            title = title_element.text if title_element else "N/A"
+            star_rating_element = tag.find('i[data-hook=review-star-rating]', first=True)
+            star_rating = star_rating_element.text if star_rating_element else "N/A"
             date = tag.find('span[data-hook=review-date]', first=True).text
             message = tag.find('span[data-hook=review-body]', first=True).text.replace('\n', '')
             reviews.append({

@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <link rel="icon" href="tab.png" type="image/png">
+
     <style>
+
+        body, html {
+            background-color: #f4f4f4;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;s
+            color: #fff; /* Text color */
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .logo-img {
+            width: 200px; /* Adjust the width of the logo image */
+            height: 200px;
+            margin-right: 10px; /* Add margin between logo image and text */
+        }
+
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-top: 20px;
+            max-height: 300px; /* Set a maximum height for the container */
+            overflow-y: auto; /* Add a vertical scrollbar when content exceeds the container height */
         }
 
         .box {
@@ -17,8 +43,6 @@
             display: flex;
             flex-direction: column;
             margin: 10px 0;
-            max-height: 300px; /* Set a maximum height for the container */
-            overflow-y: auto; /* Add a vertical scrollbar when content exceeds the container height */
         }
 
         .user {
@@ -33,13 +57,29 @@
         .review-content {
             margin-top: 10px;
         }
+
+        .go-back-button {
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            right: 10px; /* Adjust the right position as needed */
+            background-color: #ff9900; /* Button background color */
+            color: #fff; /* Text color */
+            padding: 10px 20px; /* Adjust the padding as needed */
+            border: none;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+            font-weight: bold; /* Make text bold */
+        }
     </style>
 </head>
 <body>
-    <div class="container" id="product-container">
-
+    <div class="logo">
+        <img src="newlogomaker.png" alt="ReviewHub Logo" class="logo-img">
     </div>
-
+    <div class="container" id="product-container">
+    </div>
+    <a href="http://localhost:63342/MiniProject/flipkart_search_list.html" class="go-back-button">Back To Products</a>
     <script src="flipkartreviews.js"></script>
 </body>
 </html>
