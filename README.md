@@ -6,14 +6,15 @@ Login
 SignUp
 ![3](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/2acdf5c1-0021-47a0-a83c-88cbb826d18e)
 SearchBar
-![4](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/5676e3e8-c3a8-4242-bdc3-a05f3f729799)
-Amazon Products
-![5](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/415ef235-8002-4e0d-881c-ba614d57cfec)
+![4](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/c5898bd2-b1a8-40bf-b38d-4f9ecb5d0bf2)
 Flipkart Products
-![6](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/727a3fb8-53ba-42be-ac7f-21c8b774bcf2)
+![5](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/84fc7aa4-a29a-4d7f-a306-79acbd3fbd3b)
 Flipkart Reviews
-![7](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/1e264ebd-36e1-431b-a33d-4ad17e9075e1)
+![6](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/173bd05c-bd53-445f-a6f4-42064085ca09)
+Amazon Products
+![7](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/16fa4051-ee3d-4273-94e0-fcca59060716)
 Amazon Reviews
+
 
 
 
