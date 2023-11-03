@@ -13,49 +13,61 @@
         .logo {
             display: flex;
             align-items: center;
-            justify-content: center;s
-            color: #fff; /* Text color */
+            justify-content: center;
+            color: #fff;
             font-size: 24px;
             font-weight: bold;
             text-transform: uppercase;
+            /* Remove overflow and max-height properties from the logo class */
         }
 
         .logo-img {
-            width: 200px; /* Adjust the width of the logo image */
-            height: 200px;
-            margin-right: 10px; /* Add margin between logo image and text */
+            width: 185px;
+            height: 185px;
+            margin-right: 10px;
         }
 
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
-            max-height: 300px; /* Set a maximum height for the container */
-            overflow-y: auto; /* Add a vertical scrollbar when content exceeds the container height */
+            max-height: 430px;
+            overflow-y: auto;
         }
 
+        .container::-webkit-scrollbar {
+            width: 11px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background-color: #FF9300;
+            border-radius: 10px;
+}
+
         .box {
-            width: 400px; /* Increase the width for displaying reviews */
+            width: 1250px;
             border: 1px solid #ccc;
             padding: 10px;
             text-align: left;
             display: flex;
             flex-direction: column;
             margin: 10px 0;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .user {
-            font-weight: bold;
+        .product-name {
+
+            font-weight: 500;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+
         }
 
-        .title, .date {
-            font-style: italic;
-            color: #888;
-        }
-
-        .review-content {
-            margin-top: 10px;
+        .flipkart-logo {
+            position: absolute;
+            top: 120px; /* Adjust the top position as needed */
+            left: 50px; /* Adjust the left position as needed */
+            width: 150px; /* Set the width of the image */
         }
 
         .go-back-button {
@@ -74,6 +86,9 @@
     </style>
 </head>
 <body>
+
+    <img src="flipkartlogo.png" alt="FlipkartLogo" class="flipkart-logo">
+
     <div class="logo">
         <img src="newlogomaker.png" alt="ReviewHub Logo" class="logo-img">
     </div>

@@ -22,8 +22,8 @@
         }
 
         .logo-img {
-            width: 200px;
-            height: 200px;
+            width: 185px;
+            height: 185px;
             margin-right: 10px;
         }
 
@@ -31,33 +31,43 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
-            max-height: 300px;
+            max-height: 430px;
             overflow-y: auto;
-            /* Add scrollbar to the container class */
         }
 
+        .container::-webkit-scrollbar {
+            width: 11px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background-color: #FF9300;
+            border-radius: 10px;
+}
+
         .box {
-            width: 400px;
+            width: 1250px;
             border: 1px solid #ccc;
             padding: 10px;
             text-align: left;
             display: flex;
             flex-direction: column;
             margin: 10px 0;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .user {
-            font-weight: bold;
+        .product-name {
+
+            font-weight: 500;
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+
         }
 
-        .title, .date {
-            font-style: italic;
-            color: #888;
-        }
-
-        .review-content {
-            margin-top: 10px;
+        .amazon-logo {
+            position: absolute;
+            top: 120px; /* Adjust the top position as needed */
+            left: 50px; /* Adjust the left position as needed */
+            width: 150px; /* Set the width of the image */
         }
 
         .go-back-button {
@@ -77,6 +87,8 @@
     </style>
 </head>
 <body>
+
+    <img src="amazonlogo.png" alt="AmazonLogo" class="amazon-logo">
 
     <div class="logo">
         <img src="newlogomaker.png" alt="ReviewHub Logo" class="logo-img">
