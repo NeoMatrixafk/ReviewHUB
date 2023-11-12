@@ -1,34 +1,33 @@
-# Software Used
-Python
-Flask
-Javascript
-HTML
-CSS
-PyCharm Community
-Visual Studio Code
-MongoDB / MongoDB Compass
+# Software Used <br>
+Python<br>
+Flask<br>
+Javascript<br>
+HTML<br>
+CSS<br>
+PyCharm Community<br>
+Visual Studio Code<br>
+MongoDB / MongoDB Compass<br>
 
-# System Requirements
-Python 3.11
-  Flask-Cors
-  Jinja2
-  MarkupSafe
-  beautifulsoup4
-  blinker
-  click
-  flask
-  html5lib
-  itsdangerous
-  lxml
-  npm
-  pip
-  requests
-  requests-html
-  selenium
-  werkzeug
+# System Requirements<br>
+Python 3.11<br>
+  Flask-Cors<br>
+  Jinja2<br>
+  MarkupSafe<br>
+  beautifulsoup4<br>
+  blinker<br>
+  click<br>
+  flask<br>
+  html5lib<br>
+  itsdangerous<br>
+  lxml<br>
+  npm<br>
+  pip<br>
+  requests<br>
+  requests-html<br>
+  selenium<br>
+  werkzeug<br>
 
-
-# Visuals
+# Visuals<br>
 
 ![1](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/47136dbc-0fe8-4ce5-b5d2-9b876688753d)
 Login
