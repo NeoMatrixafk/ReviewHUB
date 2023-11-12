@@ -1,3 +1,33 @@
+# Software Used
+Python
+Flask
+Javascript
+HTML
+CSS
+PyCharm Community
+Visual Studio Code
+MongoDB / MongoDB Compass
+
+# System Requirements
+Python 3.11
+  Flask-Cors
+  Jinja2
+  MarkupSafe
+  beautifulsoup4
+  blinker
+  click
+  flask
+  html5lib
+  itsdangerous
+  lxml
+  npm
+  pip
+  requests
+  requests-html
+  selenium
+  werkzeug
+
+
 # Visuals
 
 ![1](https://github.com/NeoMatrixafk/ReviewHUB/assets/125139752/47136dbc-0fe8-4ce5-b5d2-9b876688753d)
